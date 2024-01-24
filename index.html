@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Games</title>
+    <!-- tailwind and daisy ui added -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom styles -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'first-color': '#131318',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- font manrope -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+    .first{
+      border: 1px solid whitesmoke;
+      background-color: #BCED6D1A;
+    }
+    .second{
+      background-color: #FDDD5F1A;
+    }
+    .third{
+      background-color: #629CF31A;
+    }
+    .background{
+      background-color: #13131808;
+    }
+    .asol{
+      background: #131318;
+    }
+    
+</style>
+
+
+</head>
+
+<body class="overflow-x-hidden">
+    <header>
+        
+        <!-- banner section -->
+        <div class="container mx-auto mt-24 ">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/1.png" class=" w-full  rounded-2xl " />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="bg-first-color rounded-2xl p-8 lg:w-1/4 lg:absolute right-[15rem] top-0 lg:mt-[33rem] mt-3  ">
+            <h2 class="font-manrope font-extrabold text-3xl text-white pb-3">Meet all the heroes from the field</h2>
+            <p class="text-gray-500">
+                Ladies and gentlemen, welcome to the thrilling world of hockey! Tonight, we gather here for an electrifying encounter between two formidable teams, ready to showcase their skill, speed, and sportsmanship on the icy battlefield.</p>
+        </div>
+       <div class="mt-12 container mx-auto border-t-2 border-dotted border-gray-800 my-4 pt-10 ">
+        <!-- professional hockeys club -->
+        <h2 class="text-center text-4xl font-extrabold font-manrope ">Professional Hockeys Club</h2>
+        <p class="text-center text-gray-500 pt-4">
+            Joining a hockey club can be a fantastic way to immerse yourself in the sport, whether you're a player, a fan, or someone interested in the community around hockey.</p>
+       </div>
+       <!-- percentage section -->
+       <div class="mt-12 text-center lg:flex justify-center gap-20  container mx-auto border-t-2 border-dotted border-gray-800 my-4 pt-10  ">
+       <div>
+        <div class="lg:w-[5rem] h-[5rem] text-red-500  font-manrope  font-bold text-2xl  radial-progress" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+        <h2 class="font-manrope text-xl font-bold pt-1">Player Facility</h2>
+        <p class="text-gray-500 mb-6">Our team have the <br>
+             best facility for the players.</p>
+       </div>
+       <div>
+        <div class="lg:w-[5rem] h-[5rem] text-green-500  font-manrope  font-bold text-2xl  radial-progress" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+        <h2 class="font-manrope text-xl font-bold pt-1">Player Facility</h2>
+        <p class="text-gray-500 mb-6">Our team have the <br>
+             best facility for the players.</p>
+       </div>
+       <div>
+        <div class="lg:w-[5rem] h-[5rem] text-yellow-300  font-manrope font-bold text-2xl  radial-progress" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+        <h2 class="font-manrope text-xl font-bold pt-1">Player Facility</h2>
+        <p class="text-gray-500 mb-6">Our team have the <br>
+             best facility for the players.</p>
+       </div>
+       <div>
+        <div class="lg:w-[5rem] h-[5rem] text-blue-500  font-manrope  font-bold text-2xl  radial-progress" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+        <h2 class="font-manrope text-xl font-bold pt-1">Player Facility</h2>
+        <p class="text-gray-500">Our team have the <br>
+             best facility for the players.</p>
+       </div>
+       </div>
+    </header>
+    <main>
+        <!-- program section  -->
+        <section class="mt-12 container mx-auto border-t-2 border-dotted border-gray-800 my-4 pt-10 overflow-x-hidden ">
+            <div class="text-center">
+                <h1 class="text-3xl font-extrabold font-manrope">Program Sections</h1>
+                <p class="text-gray-500 font-manrope text-xl pt-3">
+                    To watch hockey on TV, you can tune in to sports networks that have broadcasting rights for hockey events. </p>
+            </div>
+            <div class="mt-12 border-t-2 border-dotted border-gray-800 my-4 pt-10">
+              <!-- first program section  -->
+                <div class="hero lg:w-[36rem] h-[21rem] rounded-2xl lg:absolute lg:mt-4 lg:ml-40 " style="background-image: url(images/2.png) ; ">
+                    <div class="hero-overlay bg-opacity-50"></div>
+                    <div class="hero-content  text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl  text-start pt-10 font-manrope font-extrabold text-white">Junior Program</h1>
+                        <p class="mb-3 font-manrope text-start">
+                            A junior program in the context of sports, including hockey, typically refers to a development program designed for young athletes. .</p>
+                        <button class="btn btn-primary font-manrope text-white">Register Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- second program section  -->
+            <div>
+              <div class="hero lg:w-[36rem] h-[21rem] lg:ml-[47rem]  rounded-2xl   " style="background-image: url(images/3.png); ">
+                <div class="hero-overlay bg-opacity-50"></div>
+                <div class="hero-content  text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-3xl  text-start pt-10 font-manrope font-extrabold text-white">Teenager Program</h1>
+                    <p class="mb-3 font-manrope text-start">Look for established youth hockey leagues in your area that offer age-appropriate divisions for teenagers.
+                      Leagues may be organized by local hockey associations, schools, or community sports organizations.</p>
+                    <button class="btn btn-primary font-manrope text-white">Register Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- third program section  -->
+            <div>
+              <div class="hero lg:w-[73rem] h-[28rem] rounded-2xl mt-4 lg:ml-[10rem] lg: " style="background-image: url(images//4.png);">
+                <div class="hero-overlay bg-opacity-50"></div>
+                <div class="hero-content  text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-3xl  text-start pt-10 font-manrope font-extrabold lg:pl-14 text-white">Professional Program</h1>
+                    <p class="mb-3 font-manrope text-start lg:pl-14">A professional hockey program prioritizes the continuous development of players. This involves structured training sessions focusing on enhancing skating, puck handling, shooting, and tactical understanding. Individualized training programs address specific player needs, ensuring a well-rounded skill set.</p>
+                    <button class="btn btn-primary font-manrope text-white lg:ml-14 ">Register Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="mt-12 container mx-auto border-t-2 border-dotted border-gray-800 my-4 pt-10 overflow-x-hidden  ">
+          <div class="text-center">
+            <h1 class="text-first-color text-4xl font-bold font-manrope">Our New Products</h1>
+            <p class="text-gray-500 pt-4 font-manrope">Today we are launching our new  products for our special buyers at a reasonable price.</p>
+          </div>
+          <div class="border-t-2 border-dotted border-gray-800 my-4 pt-10">
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-28 text-center lg:hidden">
+            <img class="w-80 h-[15rem]  relative right-14 "  src="Images/5.png" alt="">
+          </div>
+          
+          
+          <div>
+            <!-- first card  -->
+            <div>
+              
+              <div class="card card-side bg-base-100 shadow-xl rounded-2xl overflow-x-hidden lg:w-5/12">
+                <figure> <img class="hidden lg:block  lg: w-72 h-44  lg:pl-4- lg:w-[14rem] lg:h-40 pt-3 pb-4 rounded-2xl" src="images/5.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <div class="flex">
+                    <img src="Images/star.png" alt="">
+                    <h5 class="pl-1">5.0</h5>
+                    <img class="pl-1" src="Images/eye.png" alt="">
+                    <h5 class="pl-1">20</h5>
+                    <img class="pl-1" src="Images/heart.png" alt="">
+                    <h5 class="pl-1">200</h5>
+                  </div>
+                  <h2 class="card-title font-manrope font-extrabold text-xl">World Cup Flags Football</h2>
+                  <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                  <div class="lg:flex gap-9">
+                    <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                    <img class=" lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                    <h6 class="ml-6 lg:ml-0 lg:mr-10 ">Delivery Fee : Free</h6>
+                  </div>
+                  
+          </div>
+        </section>
+        <div class="pl-28 text-center lg:hidden">
+          <img class="w-80 h-[15rem]  relative right-14 "  src="Images/6.png" alt="">
+        </div>
+        <section class="container mx-auto lg:absolute lg:ml-[57rem] top-[160rem] overflow-hidden ">
+          <div class="overflow-y-hidden">
+           <!-- second card  -->
+            <div class="">
+              
+              <div class="card card-side bg-base-100 shadow-xl rounded-2xl lg:w-5/12 ">
+                <figure> <img class="hidden lg:block lg:pl-4- w-[14rem] h-40 pt-3 pb-4 rounded-2xl" src="images/6.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <div class="flex ">
+                    <img src="Images/star.png" alt="">
+                    <h5 class="pl-1">5.0</h5>
+                    <img class="pl-1" src="Images/eye.png" alt="">
+                    <h5 class="pl-1">20</h5>
+                    <img class="pl-1" src="Images/heart.png" alt="">
+                    <h5 class="pl-1">200</h5>
+                  </div>
+                  <h2 class="card-title font-manrope font-extrabold text-xl">World Cup Flags Football</h2>
+                  <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                  <div class="lg:flex gap-9">
+                    <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                    <img class="lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                    <h6 class="ml-6 lg:ml-0 lg:mr-10 ">Delivery Fee : Free</h6>
+                  </div>
+                  
+                  
+          </div>
+        
+
+        </section>
+        <div class="pl-28 text-center lg:hidden">
+          <img class="w-80 h-[15rem]  relative right-14 "  src="Images/7.png" alt="">
+        </div>
+        <section class="container mx-auto lg:absolute overflow-x-hidden  lg:left-[57rem]  ">
+          <div class="">
+           <!-- third card  -->
+            <div class="">
+              
+              <div class="card card-side bg-base-100 shadow-xl rounded-2xl lg:w-5/12 ">
+                <figure> <img class="hidden lg:block lg:pl-4- w-[14rem] h-40 pt-3 pb-4 rounded-2xl" src="images/8.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <div class="flex ">
+                    <img src="Images/star.png" alt="">
+                    <h5 class="pl-1">5.0</h5>
+                    <img class="pl-1" src="Images/eye.png" alt="">
+                    <h5 class="pl-1">20</h5>
+                    <img class="pl-1" src="Images/heart.png" alt="">
+                    <h5 class="pl-1">200</h5>
+                  </div>
+                  <h2 class="card-title font-manrope font-extrabold text-xl">World Cup Flags Football</h2>
+                  <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                  <div class="lg:flex gap-9">
+                    <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                    <img class="lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                    <h6 class="ml-6 lg:ml-0 lg:mr-10  ">Delivery Fee : Free</h6>
+                  </div>
+                  
+                  
+          </div>
+        
+
+        </section>
+      </section>
+      <div class="pl-28 text-center lg:hidden">
+        <img class="w-80 h-[15rem]  relative right-14 "  src="Images/8.png" alt="">
+      </div>
+      <section class="container mx-auto lg:relative overflow-x-hidden   ">
+        <div class="">
+         <!-- fourth card  -->
+          <div class="">
+            
+            <div class="card card-side bg-base-100 shadow-xl rounded-2xl lg:w-5/12 ">
+              <figure> <img class="hidden lg:block lg:pl-4- w-[14rem] h-40 pt-3 pb-4 rounded-2xl" src="images/7.png" alt="Movie"/></figure>
+              <div class="card-body">
+                <div class="flex ">
+                  <img src="Images/star.png" alt="">
+                  <h5 class="pl-1">5.0</h5>
+                  <img class="pl-1" src="Images/eye.png" alt="">
+                  <h5 class="pl-1">20</h5>
+                  <img class="pl-1" src="Images/heart.png" alt="">
+                  <h5 class="pl-1">200</h5>
+                </div>
+                <h2 class="card-title font-manrope font-extrabold text-xl">Cap For Hockeys</h2>
+                <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                <div class="lg:flex gap-9">
+                  <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                  <img class="lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                  <h6 class="ml-6 lg:ml-0 lg:mr-10 ">Delivery Fee : Free</h6>
+                </div>
+        </div>
+      
+
+      </section>
+      <div class="pl-28 text-center lg:hidden">
+        <img class="w-80 h-[15rem]  relative right-14 "  src="Images/9.png" alt="">
+      </div>
+      <section class="container mx-auto lg:absolute overflow-x-hidden  lg:left-[57rem]  ">
+        <div class="">
+         <!-- fifth card  -->
+          <div class="">
+            
+            <div class="card card-side bg-base-100 shadow-xl rounded-2xl lg:w-5/12 ">
+              <figure> <img class="hidden lg:block lg:pl-4- w-[14rem] h-40 pt-3 pb-4 rounded-2xl" src="images/10.png" alt="Movie"/></figure>
+              <div class="card-body">
+                <div class="flex ">
+                  <img src="Images/star.png" alt="">
+                  <h5 class="pl-1">5.0</h5>
+                  <img class="pl-1" src="Images/eye.png" alt="">
+                  <h5 class="pl-1">20</h5>
+                  <img class="pl-1" src="Images/heart.png" alt="">
+                  <h5 class="pl-1">200</h5>
+                </div>
+                <h2 class="card-title font-manrope font-extrabold text-xl">World Cup Flags Football</h2>
+                <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                <div class="lg:flex gap-9">
+                  <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                  <img class="lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                  <h6 class="ml-6 lg:ml-0 lg:mr-10  ">Delivery Fee : Free</h6>
+                </div>
+                
+                
+        </div>
+      
+
+      </section>
+      <div class="pl-28 text-center lg:hidden">
+        <img class="w-80 h-[15rem]  relative right-14 "  src="Images/10.png" alt="">
+      </div>
+      <section class=" overflow-x-hidden container mx-auto  ">
+        <div class="">
+         <!-- sixth card  -->
+          <div class="">
+            
+            <div class="card card-side bg-base-100 shadow-xl rounded-2xl lg:w-5/12 ">
+              <figure> <img class="hidden lg:block lg:pl-4- w-[14rem] h-40 pt-3 pb-4 rounded-2xl" src="images/9.png" alt="Movie"/></figure>
+              <div class="card-body">
+                <div class="flex ">
+                  <img src="Images/star.png" alt="">
+                  <h5 class="pl-1">5.0</h5>
+                  <img class="pl-1" src="Images/eye.png" alt="">
+                  <h5 class="pl-1">20</h5>
+                  <img class="pl-1" src="Images/heart.png" alt="">
+                  <h5 class="pl-1">200</h5>
+                </div>
+                <h2 class="card-title font-manrope font-extrabold text-xl">World Cup Flags Football</h2>
+                <p class="font-manrope text-gray-500">World cup is the most exciting tournament of the world.Many international countries take part to clinch the trophy</p>
+                <div class="lg:flex gap-9">
+                  <h5 class="text-red-500 font-extrabold font-manrope text-xl">Price - $22.00</h5>
+                  <img class="lg:ml-10 relative top-6  lg:top-0 lg:relative lg:left-7" src="Images/cart.svg" alt="">
+                  <h6 class="ml-6 lg:ml-0 lg:mr-10 ">Delivery Fee : Free</h6>
+                </div> 
+        </div>
+        <!-- <section class="border-dotted border-gray-800 my-4 pt-10">
+          <h1 class="text-2xl font-manrope font-extrabold">Clients Question</h1>
+          <p class="text-gray-500 font-manrope ">You can choose your question from the given accordion.</p>
+        </section> -->
+      
+
+      </section>
+      <!-- get in touch -->
+      <section class="mt-12 container mx-auto border-t-2 border-dotted border-gray-800 my-4 pt-10  ">
+        <div class="text-center">
+          <h2 class="text-xl font-manrope font-bold">Get In Touch</h2>
+          <p class="font-manrope text-gray-500">You can contact with us easily.Our contact information is below</p>
+        </div>
+        <div class="border-t-2 border-dotted border-gray-800   my-4 pt-10 lg:flex gap-6 ">
+          <div class="bg-white lg:w-[29rem]
+          h-[48rem] rounded-2xl first ">
+            <div class=" lg:w-[23rem] h-52 rounded-2xl lg:ml-10 mt-10 first ">
+              <img class="lg:pl-8 pt-4" src="Images/Group 1171275317.png" alt="">
+            <h4 class="pt-4 lg:pl-8">phone number:</h4>
+            <p class="lg:pl-8"> (+62) 123-321-543</p>
+            </div>
+            <div class=" lg:w-[23rem] h-52 rounded-2xl lg:ml-10 mt-10 second ">
+              <img class="lg:pl-8 pt-4" src="Images/Group 1171275318.png" alt="">
+              <h4 class="pt-4 lg:pl-8">email:</h4>
+              <p class="lg:pl-8"> hockeys@support.com</p>
+
+            </div>
+            <div class=" lg:w-[23rem] h-52 rounded-2xl lg:ml-10 mt-10 third ">
+              <img class="lg:pl-8 pt-4" src="Images/Group 1171275321.png" alt="">
+              <h5 class="pt-4 lg:pl-8">location:</h5>
+              <p class="lg:pl-8">152/1 Mohakhali Wireless Gate</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="">
+              <h1 class="text-xl font-bold font-manrope mt-24  lg:mt-0 ">Your Name</h1>
+              <input type="text" placeholder="Enter your full name" class="input input-bordered  w-80 h-14 background  rounded-2xl " />
+              <h1 class="text-xl font-bold font-manrope pt-4">Subject</h1>
+              <input type="text" placeholder="Enter your subject" class="input input-bordered w-80 h-14  background rounded-2xl  " />
+              <h1 class="text-xl font-bold font-manrope mt-20 lg:mt-0 pt-4">Message</h1>
+              <textarea class="textarea textarea-bordered w-[21rem] h-52 lg:w-[42rem] lg:h-[23rem] background rounded-2xl " placeholder="Write your message"></textarea>
+              <button class="btn btn-error absolute overflow-x-hidden left-1 top-[510rem] lg:w-[42rem] lg:h-14 lg:left-[42rem]  lg:top-[253rem]">Send Message</button>
+
+              
+            </div>
+            <h1 class="text-xl font-bold font-manrope absolute top-[472rem] lg:absolute lg:left-[84rem] lg:top-[215rem] lg:pl-7">Your Email</h1>
+            <input type="text" placeholder="Enter your email" class="input input-bordered absolute top-[474rem] lg:absolute lg:left-[85rem]
+           lg:top-[217rem] w-80 h-14  background rounded-2xl  " />
+            <h1 class="text-xl font-bold font-manrope absolute top-[489.5rem] lg:absolute lg:left-[84rem]
+            lg:top-[221rem] lg:pl-7">Phone Number</h1>
+            <input type="text" placeholder="Enter your phone number" class="input input-bordered absolute top-[491.5rem] lg:absolute lg:left-[85rem]
+            lg:top-[223rem] w-80 h-14  background rounded-2xl  " />
+
+          </div>
+          
+        </div>
+        <div class="background text-center mt-14 lg:mt-0 lg:w-[73rem] h-36 lg:ml-24 rounded-2xl">
+          <h1 class="font-manrope text-xl font-extrabold pt-3">Social Media</h1>
+          <img class="text-center ml-[7rem] mt-4 lg:mt-0 lg:ml-0 lg:pl-[31rem] lg:pt-5" src="Images/Social.svg" alt="">
+
+        </div>
+
+      </section>
+      
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content asol">
+      <aside>
+        <h1 class="text-white font-manrope text-3xl font-extrabold ml-[4rem] lg:ml-0 ">Get In Touch</h1>
+        <p class="font-manrope text-gray-500">You can contact with us any time from the number given below.We have 24 hour support so you can call whenever you want.</p>
+        <div class="flex gap-4">
+          <img src="Images/email.png" alt="">
+          <h3 class="font-manrope text-gray-500">hockeys@support.com</h3>
+        </div>
+        <div class="flex gap-4 ml-4 lg:ml-0">
+          <img src="Images/call.png" alt="">
+          <h3 class="font-manrope text-gray-500">(+62) 123-321-543</h3>
+        </div>
+      </aside> 
+      <nav>
+        <header class="footer-titl text-white font-manrope  font-extrabold">Company</header> 
+        <a class="link link-hover text-gray-500">About us</a>
+        <a class="link link-hover text-gray-500">Leadership</a>
+        <a class="link link-hover text-gray-500">Careers</a>
+        <a class="link link-hover text-gray-500">News and Article</a>
+        <a class="link link-hover text-gray-500">Legal Notice</a>
+     
+      </nav> 
+      <nav class=" absolute left-[16rem] top-[458rem] lg:static">
+        <header class="footer-titl text-white font-manrope  font-extrabold">Support</header> 
+        <a class="link link-hover text-gray-500">Help Center</a>
+        <a class="link link-hover text-gray-500">FAQ</a>
+        <a class="link link-hover text-gray-500">Ticket Support</a>
+        <a class="link link-hover text-gray-500">Contact Us</a>
+      </nav> 
+      <nav class="ml-[8rem] lg:ml-0">
+        <header class="footer-titl text-white font-manrope  font-extrabold">Services</header> 
+        <a class="link link-hover text-gray-500">Academy</a>
+        <a class="link link-hover text-gray-500">Group Lesson</a>
+        <a class="link link-hover text-gray-500">Private Lessons</a>
+        <a class="link link-hover text-gray-500">Hockeys for Kid</a>
+        <a class="link link-hover text-gray-500">Hockeys for Adults</a>
+      </nav>
+    </footer>
+</body>
+
+</html>
